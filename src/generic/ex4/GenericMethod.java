@@ -1,4 +1,4 @@
-package generic.test.ex4;
+package generic.ex4;
 
 public class GenericMethod { // 여기다가 하면 제네릭 타입
     public static Object objMethod(Object obj) {

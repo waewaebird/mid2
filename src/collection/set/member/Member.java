@@ -1,5 +1,6 @@
 package collection.set.member;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Member {
@@ -28,6 +29,9 @@ public class Member {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Member{" +
+                "id='" + id + "'" +
+                '}';
     }
+
 }

@@ -14,7 +14,7 @@ public class CardGameMain {
         @Override
         public int compareTo(Decks o) {
             if(this.number == o.number) {
-                return Integer.compare(this.card.getV(), o.card.getV());
+                return this.card.compareTo(o.card);
             } else {
                 return Integer.compare(this.number, o.number);
             }
@@ -38,7 +38,9 @@ public class CardGameMain {
         }
         int sum1 = 0;
         System.out.print("플레이어1의 카드 : [");
+
         player1.sort(null);
+
         for (Decks D : player1) {
             System.out.print("" + D.number + "(" + D.card.getC() + "), ");
             sum1 += D.number;

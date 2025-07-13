@@ -1,21 +1,19 @@
 package collection.compare.test;
 
 public enum Card{
-    SPADE('♠', 1), HEART('♥', 2), DIAMOND('◆', 3), CLOVER('♣', 4);
+    SPADE('♠'),
+    HEART('♥'),
+    DIAMOND('◆'),
+    CLOVER('♣');
 
     private final Character c;
-    private final int v;
 
-    Card(Character c, int v) {
+    Card(Character c) {
         this.c = c;
-        this.v = v;
+
     }
 
     public Character getC() {
         return c;
-    }
-
-    public int getV() {
-        return v;
     }
 }
